@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            position: relative;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .titulo-vistoso {
+            font-size: 32px;
+            color: #fff;
+            padding: 20px;
+            border-radius: 50px;
+            background: linear-gradient(90deg, #203764, #FF0000); 
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden
+        }
+
+        .titulo-vistoso::before {
+            content: "";
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            border: 3px solid #333;
+            border-radius: 50%;
+            top: -25%;
+            left: -25%;
+            z-index: -1;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            margin-right: 10px;
+            border-radius: 5px;
+            margin-left: -15px;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .center-track-text {
+            font-size: 24px;
+            color: #FF0000;
+            margin-top: 20px;
+        }
+
+        .caixa-texto-amarela {
+            background-color: #203764;
+            padding: 15px;
+            border-radius: 8px;
+            position: fixed; /* Fixa a posição na tela */
+            top: 20px;
+            right: 20px; /* Posiciona no canto direito */
+            z-index: 999; /* Garante que fique acima de outros elementos */
+            color: #fff;
+            font-family: 'Genos', sans-serif;
+        }
+
+        .lista-botoes {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .botao-digital {
+            display: inline-block; /* Torna os botões em linha */
+            width: 200px; /* Largura dos botões */
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #203764;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px #000;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .botao-digital:hover {
+            background-color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="file:///C:/Users/JHONATAN%20HENRIQUE/Downloads/logo_8289.png" alt="Imagem 1" width="250">
+            <img src="file:///C:/Users/JHONATAN%20HENRIQUE/Downloads/depositphotos_37091197-stock-illustration-vector-illustration-of-water-truck.jpg" alt="Imagem 2" width="250">
+            <img src="file:///C:/Users/JHONATAN%20HENRIQUE/Downloads/depositphotos_37091197-stock-illustration-vector-illustration-of-water-truck.jpg" alt="Imagem 2" width="150">
+            <img src="file:///C:/Users/JHONATAN%20HENRIQUE/Downloads/depositphotos_37091197-stock-illustration-vector-illustration-of-water-truck.jpg" alt="Imagem 2" width="100">
+            <img src="file:///C:/Users/JHONATAN%20HENRIQUE/Downloads/depositphotos_37091197-stock-illustration-vector-illustration-of-water-truck.jpg" alt="Imagem 2" width="150">
+        </div>
+
+        <div class="caixa-texto-amarela">
+            <p>
+               PERMITIR POPU-S ACIMA</p>
+
+        </div>
+
+            <h1 class="titulo-vistoso">CENTER TRACK ATALHOS RÁPIDOS</h1>
+
+
+        <ul class="lista-botoes">
+        <a href="https://www.fulltrackapp.com/mosaico/visualizar/15121#" target="_blank" class="botao-digital">Divinolândia/D-10</a>
+        <a href="https://www.fulltrackapp.com/mosaico/visualizar/13831" target="_blank" class="botao-digital">Jordão Guincho</a>
+        <a href="https://www.fulltrackapp.com/mosaico/visualizar/15122" target="_blank" class="botao-digital">Transpotadora Pizelli</a>
+        <a href="https://www.fulltrackapp.com/mosaico/visualizar/15123" target="_blank" class="botao-digital">ZT Transportes 01</a>
+        <a href="https://www.fulltrackapp.com/mosaico/visualizar/15124" target="_blank" class="botao-digital">ZT Transportes 02</a>
+        <a href="https://www.fulltrackapp.com/mosaico/visualizar/15125" target="_blank" class="botao-digital">Guellero Transportes</a>
+        <a href="https://www.fulltrackapp.com/mosaico/visualizar/13219" target="_blank" class="botao-digital">Transpantcho 01</a>
+        <a href="https://www.fulltrackapp.com/mosaico/visualizar/13220#" target="_blank" class="botao-digital">Transpantcho 02</a>
+        <a href="https://www.fulltrackapp.com/cadastros/itinerario#" target="_blank" class="botao-digital">Interários</a>
+        <a href="https://www.fulltrackapp.com/rastreados#" target="_blank" class="botao-digital">Rastreados</a>
+        <a href="https://www.fulltrackapp.com/mapaGeral#" target="_blank" class="botao-digital">Mapa Geral 01</a>
+        <a href="https://www.fulltrackapp.com/mapaGeral#" target="_blank" class="botao-digital">Mapa Geral 02</a>
+        <a href="https://www.fulltrackapp.com/mapaGeral#" target="_blank" class="botao-digital">Mapa Geral 03</a>
+        <a href="https://sistema.getrak.com/centertrack23/msumario/index/index" target="_blank" class="botao-digital">Getrack</a>
+        <a href="https://adm.fullarm.com/monitoramento#!/ocorrencias" target="_blank" class="botao-digital">FullCenter</a>
+        <a href="https://onedrive.live.com/edit.aspx?resid=6AB3E81E4E2CC1A!200" target="_blank" class="botao-digital">Controle De Veículos</a>
+        <a href="https://webmailpro.uol.com.br/?xc=8ff29140885cdf17ae1b7ee1ce498b8b#/webmail/0//SENT/page:1" target="_blank" class="botao-digital">E-mail Uol</a>
+        <a href="https://onedrive.live.com/edit.aspx?resid=6AB3E81E4E2CC1A!238&cid=6ab3e81e4e2cc1a&CT=1703913706724&OR=ItemsView" target="_blank" class="botao-digital">Anotações Dia a Dia</a>
+        </ul>
+        
+    </div>
+</body>
+</html>
+       
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 50vh;
+            margin: 0;
+            
+        }
+
+        button {
+            font-size: 20px;
+            padding: 15px 30px;
+            cursor: pointer;
+            border: 2px solid #007BFF;
+            border-radius: 30px;
+            background-color: #007BFF;
+            color: #fff;
+            transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, width 0.3s;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            align-self: flex-start;
+            margin-top: 30px;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #00cc44;
+            border-color: #2ecc71;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            width: 250px;
+        }
+    </style>
+    <script>
+        function abrirLinks() {
+            var links = [
+                'https://www.fulltrackapp.com/mosaico/visualizar/15121#',
+                'https://www.fulltrackapp.com/mosaico/visualizar/13831#',
+                'https://www.fulltrackapp.com/mosaico/visualizar/15122',
+                'https://www.fulltrackapp.com/mosaico/visualizar/15123#',
+                'https://www.fulltrackapp.com/mosaico/visualizar/15124',
+                'https://www.fulltrackapp.com/mosaico/visualizar/15125#',
+                'https://www.fulltrackapp.com/mosaico/visualizar/13219#',
+                'https://www.fulltrackapp.com/mosaico/visualizar/13220',
+                'https://www.fulltrackapp.com/cadastros/itinerario',
+                'https://www.fulltrackapp.com/rastreados#',
+                'https://www.fulltrackapp.com/cadastros/ponto_referencia',
+                'https://www.fulltrackapp.com/mapaGeral#',
+                'https://www.fulltrackapp.com/mapaGeral#',
+                'https://sistema.getrak.com/centertrack23/msumario/index/index',
+                'https://adm.fullarm.com/monitoramento#!/ocorrencias',
+                'https://onedrive.live.com/edit.aspx?resid=6AB3E81E4E2CC1A!200',
+                'https://webmailpro.uol.com.br/?xc=8ff29140885cdf17ae1b7ee1ce498b8b#/webmail/0//SENT/page:1',
+                'https://onedrive.live.com/edit.aspx?resid=6AB3E81E4E2CC1A!238&cid=6ab3e81e4e2cc1a&CT=1698341048105&OR=ItemsView'
+            ];
+
+            var resposta = confirmarAviso();
+
+            if (resposta) {
+                links.forEach(function(link) {
+                    window.open(link, '_blank', 'noopener,noreferrer');
+                });
+            }
+        }
+
+        function confirmarAviso() {
+            return confirm('Ao clicar em "OK", serão abertos os links em novas abas. Deseja continuar?');
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="abrirLinks()">Abrir Todos Os Links</button>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column; /* Alterado para row para alinhar os botões lado a lado */
+            justify-content: center;
+            height: 50vh;
+            margin: 0;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 15px 30px;
+            cursor: pointer;
+            border: 2px solid #007BFF;
+            border-radius: 30px;
+            background-color: #007BFF;
+            color: #fff;
+            transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, width 0.3s;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin-top: 30px;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #00cc44;
+            border-color: #2ecc71;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            width: 250px;
+        }
+    </style>
+    <script>
+        function abrirLinks(links) {
+            var resposta = confirmarAviso();
+
+            if (resposta) {
+                links.forEach(function(link) {
+                    window.open(link, '_blank', 'noopener,noreferrer');
+                });
+            }
+        }
+
+        function confirmarAviso() {
+            return confirm('Ao clicar em "OK", serão abertos os links em novas abas. Deseja continuar?');
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="abrirLinks([
+        'https://www.fulltrackapp.com/mosaico/visualizar/15121#',
+        'https://www.fulltrackapp.com/mosaico/visualizar/13831#',
+        'https://www.fulltrackapp.com/mosaico/visualizar/15122',
+        'https://www.fulltrackapp.com/mosaico/visualizar/15123#',
+        'https://www.fulltrackapp.com/mosaico/visualizar/15124',
+        'https://www.fulltrackapp.com/mosaico/visualizar/15125#',
+        'https://www.fulltrackapp.com/mosaico/visualizar/13219#',
+        'https://www.fulltrackapp.com/mosaico/visualizar/13220',
+        'https://www.fulltrackapp.com/cadastros/itinerario',
+        'https://www.fulltrackapp.com/rastreados#',
+        'https://www.fulltrackapp.com/cadastros/ponto_referencia',
+        'https://www.fulltrackapp.com/mapaGeral#',
+        'https://www.fulltrackapp.com/mapaGeral#',
+        'https://sistema.getrak.com/centertrack23/msumario/index/index',
+        'https://adm.fullarm.com/monitoramento#!/ocorrencias',
+        'https://onedrive.live.com/edit.aspx?resid=6AB3E81E4E2CC1A!200',
+        'https://webmailpro.uol.com.br/?xc=8ff29140885cdf17ae1b7ee1ce498b8b#/webmail/0//SENT/page:1',
+        'https://onedrive.live.com/edit.aspx?resid=6AB3E81E4E2CC1A!238&cid=6ab3e81e4e2cc1a&CT=1698341048105&OR=ItemsView'
+    ])">Abrir Links 1</button>
+
+    <button onclick="abrirLinks([
+        'https://www.example.com/link1',
+        'https://www.example.com/link2',
+        'https://www.example.com/link3'
+    
+</body>
+</html>
+
